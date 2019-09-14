@@ -10,5 +10,10 @@ package practica5poo;
  * @author velaz
  */
 public class prisma {
-    
+    public prisma(){
+        
+    }
+    public void crearPrisma(){
+        
+    }
 }
