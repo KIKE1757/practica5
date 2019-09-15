@@ -18,9 +18,6 @@ public class Cono {
         float area=pi*r*(r+g);
         System.out.println("El volumen del cono es: "+area);
     }
-    public void print(){
-        
-    }
     public static void main(String[] args) {
         Cono cono1= new Cono(45,12,40);
         cono1.volumen();
