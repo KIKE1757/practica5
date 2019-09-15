@@ -10,7 +10,7 @@ public class Practica5POO {
     }
     public static void menu(){
         System.out.println("Seleccione una opcion:"
-                           +"\n1)Pirsma"
+                           +"\n1)Prisma"
                            +"\n2)Circunferencia"
                            +"\n3)Cono"
                            +"\n4)Salir");

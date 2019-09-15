@@ -24,7 +24,7 @@ public class prisma {
         this.perimetro=2*(this.base+this.altura);
     }
     
-    protected static int lectura(){
+    public static int lectura(){
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         return x;
