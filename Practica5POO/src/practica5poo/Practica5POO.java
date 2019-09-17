@@ -20,10 +20,13 @@ public class Practica5POO {
                 crearPrisma();
                 break;
             case 2:
+                crearCirc();
                 break;
             case 3: 
+                crearCono();
                 break;
             case 4:
+                System.out.println("***  Adios  ***");
                 break;
             default:
                 System.out.println("Opcion no valida");
@@ -70,6 +73,26 @@ public class Practica5POO {
                 crearPrisma();
         }
     }
+    public static void crearCirc(){
+        System.out.println("Dame el radio de tu esfera ");
+        float x = lectura();
+        circunferencia circunferencia1 = new circunferencia(x);
+        circunferencia1.volumen();
+        circunferencia1.area();
+        desicion();
+    }
+    public static void crearCono(){
+        System.out.println("Ingrese  el valor de generatriz: ");
+        int g = lectura();
+        System.out.println("Ingrese el valor del radio de la base: ");
+        int r = lectura();
+        System.out.println("Ingrese el valor de la altura: ");
+        int h = lectura();
+        cono cono1= new cono(g,r,h);
+        cono1.volumen();
+        cono1.area();
+        desicion();
+    }
     static void desicion(){
         System.out.println("¿Desea regresar al menú?"
                                    + "\nSI) 1"
@@ -80,7 +103,7 @@ public class Practica5POO {
                                            menu();
                                            break;
                                        default:
-                                           System.out.println("Adios");
+                                           System.out.println("***  Adios  ***");
                                    }
     }
 }
